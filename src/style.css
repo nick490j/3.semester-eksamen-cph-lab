@@ -1,3 +1,69 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root {
+  --color-brown-light: #bb9f93;
+  --color-grey: #7c7c7c;
+  --color-white-clean: #ffffff;
+  --color-yellow-dark: #b7ab6e;
+  --color-blue-light: #ceede7;
+  --color-rust-light: #deaf9e;
+  --color-green-light: #c2dac1;
+  --color-green: #8ead8c;
+  --color-rust-dark: #92472c;
+  --color-blue: #97bab3;
+  --color-white-dark: #e8dcca;
+  --color-yellow-light: #fff5c4;
+  --color-primary-white: #fbf5ec;
+  --color-brown-dark: #241c19;
+  --color-brown: #584239;
+  --color-blue-dark: #6f8a85;
+  --color-green-dark: #596d58;
+  --color-rust: #c6613c;
+  --color-yellow: #f2e291;
+  --spacing-small: 4px;
+  --spacing-medium: 8px;
+  --spacing-large: 12px;
+  --spacing-x-large: 20px;
+  --duration-paused: paused;
+  --duration-slow: 3s;
+  --duration-fast: 500ms;
+  --easing-easeInSine: cubic-bezier(0.12, 0, 0.39, 0);
+  --easing-easeOutSine: cubic-bezier(0.61, 1, 0.88, 1) 500ms;
+  --radius-circle: 50%;
+  --radius-large: 8px;
+  --radius-small: 2px;
+  --opacity-opacity-25: 0.25;
+  --opacity-opacity-50: 0.5;
+  --opacity-opacity-75: 0.75;
+  --shadow-level-1: 0 1px 1px 0 rgba(0, 0, 0, 0.14),
+    0 2px 1px -1px rgba(0, 0, 0, 0.12), 0 1px 3px 0 rgba(0, 0, 0, 0.2);
+  --shadow-level-2: 0 3px 4px 0 rgba(0, 0, 0, 0.14),
+    0 3px 3px -2px rgba(0, 0, 0, 0.12), 0 1px 8px 0 rgba(0, 0, 0, 0.2);
+  --shadow-level-3: 0 6px 10px 0 rgba(0, 0, 0, 0.14),
+    0 1px 18px 0 rgba(0, 0, 0, 0.12), 0 3px 5px -1px rgba(0, 0, 0, 0.2);
+  --media-query-max-width-mobile: 600px;
+  --media-query-max-width-tablet: 1024px;
+  --font-family-h1: Exo 2, sans-serif;
+  --font-family-h2-h4: Palanquin, sans-serif;
+  --font-family-p: Palatino Linotype, serif;
+  --font-size-button-mobil: 12px;
+  --font-size-button-web: 24px;
+  --font-size-p-mobil: 14px;
+  --font-size-h4-mobil: 14px;
+  --font-size-h3-mobil: 16px;
+  --font-size-h2-mobil: 20px;
+  --font-size-h1-mobil: 25px;
+  --font-size-p-web: 18px;
+  --font-size-h5-web: 20px;
+  --font-size-h4-web: 25px;
+  --font-size-h1-web: 57px;
+  --font-size-h2-web: 40px;
+  --font-size-h3-web: 32px;
+  --letter-spacing-dense: -1px;
+  --letter-spacing-double: 2px;
+  --line-height-heading: 1.25;
+  --line-height-reset: 1;
+  --line-height-text: 1.5;
+}
