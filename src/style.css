@@ -97,23 +97,33 @@
   --line-height-reset: 1;
   --line-height-text: 1.5;
 }
-
-
-
-button{
-font-size: var(--font-size-button-mobil);
-background: var(--color-brown);
-color: var(--color-primary-white);
+/*LISTE*/
+ul {
+  list-style-type: square;
 }
 
+li {
+  color: #8ead8c;
+  /* Bullet Color */
+}
 
-body{
+li span {
+  color: #241c19;
+  /* Text Color */
+}
+
+/* KNAP */
+button {
+  font-size: var(--font-size-button-mobil);
+  background: var(--color-brown);
+  color: var(--color-primary-white);
+}
+
+body {
   margin: 10px;
 }
 
-
-#carousel
-{
+#carousel {
   place-items: center;
   display: flex;
   list-style: none;
@@ -123,7 +133,7 @@ body{
 
 #carousel li {
   margin: 2px;
-  border: 2px  solid var(--color-brown-dark);
+  border: 2px solid var(--color-brown-dark);
   display: grid;
   place-items: center;
   flex-shrink: 0;
@@ -137,5 +147,3 @@ body{
 #carousel li:nth-child(even) {
   background-color: var(--color-primary-white);
 }
-
-
