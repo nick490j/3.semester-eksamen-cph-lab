@@ -67,3 +67,9 @@
   --line-height-reset: 1;
   --line-height-text: 1.5;
 }
+
+
+
+button{
+font-size: var(--font-size-button-mobil);
+}
