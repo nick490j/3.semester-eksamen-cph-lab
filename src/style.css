@@ -121,7 +121,7 @@ body{
   scroll-snap-type: x mandatory;
 }
 
-li {
+#carousel li {
   margin: 2px;
   border: 2px  solid var(--color-brown-dark);
   display: grid;
@@ -130,11 +130,11 @@ li {
   scroll-snap-align: start;
 }
 
-li:nth-child(odd) {
+#carousel li:nth-child(odd) {
   background-color: var(--color-primary-white);
 }
 
-li:nth-child(even) {
+#carousel li:nth-child(even) {
   background-color: var(--color-primary-white);
 }
 
