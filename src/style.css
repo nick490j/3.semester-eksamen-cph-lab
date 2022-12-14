@@ -117,10 +117,14 @@ button {
   font-size: var(--font-size-button-mobil);
   background: var(--color-brown);
   color: var(--color-primary-white);
+
+}
+header {
+    background-color: var(--color-brown);
 }
 
 body {
-  margin: 10px;
+  background-color: var(--color-primary-white);
 }
 
 #carousel {
