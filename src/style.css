@@ -3,6 +3,19 @@
 @tailwind utilities;
 
 :root {
+
+  /*KNAPPER*/
+--button-width-web: 178px;
+--button-height-web: 62px;
+--button-radius-web: 10px;
+--button-background-standard: #584239 ;
+--button-text-color: #ffffff;
+--button-dropshadow: 0px 10px 0px black, 0 0 2px black, 0 0 px black;
+
+
+
+
+
   /*FARVER*/
   /*HVID*/
   --color-white-clean: #ffffff;
@@ -150,4 +163,13 @@ body {
 
 #carousel li:nth-child(even) {
   background-color: var(--color-primary-white);
+}
+
+
+button {
+ width: var(--button-width-web);
+height: var(--button-height-web);
+background-color: var(--button-background-standard);
+box-shadow: var(--button-dropshadow);  
+
 }
