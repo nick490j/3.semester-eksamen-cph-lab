@@ -3,8 +3,8 @@
 @tailwind utilities;
 
 :root {
-
   /*KNAPPER*/
+<<<<<<< HEAD
 
   /*almindelig knap*/
 --button-width-web: 178px;
@@ -30,6 +30,14 @@
 
 
 
+=======
+  --button-width-web: 178px;
+  --button-height-web: 62px;
+  --button-radius-web: 10px;
+  --button-background-standard: #584239;
+  --button-text-color: #ffffff;
+  --button-dropshadow: 0px 10px 0px black, 0 0 2px black, 0 0 px black;
+>>>>>>> c7e1be9b2675e2b31f7c84653751d6b8ce3110cc
 
   /*FARVER*/
   /*HVID*/
@@ -145,73 +153,73 @@ button {
   font-size: var(--font-size-button-mobil);
   background: var(--color-brown);
   color: var(--color-primary-white);
-
 }
 header {
-    background-color: var(--color-brown);
+  background-color: var(--color-brown);
 }
 /*Dropdown menu*/
 .navbar {
-    overflow: hidden;
-    background-color: var(--color-brown);
-    margin-block: 2px;
-    margin-right: 10px;
-  }
-  
-  .navbar a {
-    float: left;
-    font-size: 16px;
-    color: var(--color-primary-white);
-    text-align: right;
-    padding: 14px 16px;
-    text-decoration: none;
-  }
-  
-  .dropdown {
-    float: left;
-    overflow: hidden;
-  }
-  
-  .dropdown .dropbtn {
-    font-size: 16px;  
-    border: none;
-    outline: none;
-    color: var(--color-primary-white);
-    padding: 14px 16px;
-    background-color: inherit;
-    font-family: inherit;
-    margin: 0;
-  }
-  
-  .navbar a:hover, .dropdown:hover .dropbtn {
-    color: var(--color-yellow);
-  }
-  
-  .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: var(--color-brown);
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-  }
-  
-  .dropdown-content a {
-    float: none;
-    color: var(--color-primary-white);
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    text-align: left;
-  }
-  
-  .dropdown-content a:hover {
-    color: var(--color-yellow);
-  }
-  
-  .dropdown:hover .dropdown-content {
-    display: block;
-  }
+  overflow: hidden;
+  background-color: var(--color-brown);
+  margin-block: 2px;
+  margin-right: 10px;
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: var(--color-primary-white);
+  text-align: right;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: var(--color-primary-white);
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover,
+.dropdown:hover .dropbtn {
+  color: var(--color-yellow);
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: var(--color-brown);
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: var(--color-primary-white);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  color: var(--color-yellow);
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
 
 body {
   background-color: var(--color-primary-white);
@@ -242,8 +250,8 @@ body {
   background-color: var(--color-primary-white);
 }
 
-
 button {
+<<<<<<< HEAD
  width: var(--button-width-web);
 height: var(--button-height-web);
 background-color: var(--button-background-standard);
@@ -275,3 +283,74 @@ background-color: var(--cta-button-background-standard);
 color: var(--color-primary-white);
 --cta-button-dropshadow: 5px 10px 20px black;
 }
+=======
+  width: var(--button-width-web);
+  height: var(--button-height-web);
+  background-color: var(--button-background-standard);
+  box-shadow: var(--button-dropshadow);
+}
+
+/* BURGERMENU */
+header button {
+  width: 0;
+  height: 0;
+  background-color: none;
+  box-shadow: none;
+}
+
+.toggle-btn {
+  display: none;
+}
+
+header a {
+  list-style: none;
+  text-decoration: none;
+}
+
+/*BURGERMENU */
+@media (max-width: 700px) {
+  .toggle-btn {
+    background: transparent;
+    border: none;
+    display: block;
+    min-width: 44px;
+    min-height: 44px;
+    font-size: 1.1rem;
+    cursor: pointer;
+  }
+
+  nav {
+    display: none;
+  }
+
+  nav.shown {
+    padding-top: 1rem;
+    display: flex;
+    flex: 1 1 100%;
+    flex-flow: column;
+  }
+
+  nav ul {
+    display: flex;
+    flex-flow: column;
+  }
+}
+
+@media (min-width: 700px) {
+  #forside {
+    width: 40%;
+  }
+
+  .logo {
+    font-size: 1.5rem;
+    top: 10%;
+  }
+}
+
+@media (min-width: 950px) {
+  .logo {
+    font-size: 1.5rem;
+    top: 12%;
+  }
+}
+>>>>>>> c7e1be9b2675e2b31f7c84653751d6b8ce3110cc
