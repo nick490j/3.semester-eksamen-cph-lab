@@ -4,12 +4,40 @@
 
 :root {
   /*KNAPPER*/
+<<<<<<< HEAD
+
+  /*almindelig knap*/
+--button-width-web: 178px;
+--button-height-web: 62px;
+--button-radius-web: 10px;
+--button-background-standard: #584239 ;
+--button-text-color: #ffffff;
+--button-dropshadow: 5px 10px 20px black;
+--button-hover: #97bab3;
+--button-inner-shadow:inset 0 5 10px black;
+
+/*cta knap*/
+--cta-button-width-web: 359px;
+--cta-button-height-web: 59px;
+--cta-button-radius-web: 10px;
+--cta-button-background-standard: #c6613c ;
+--cta-button-text-color: #ffffff;
+--cta-button-dropshadow: 5px 10px 20px black;
+--cta-button-hover: #97bab3;
+
+
+
+
+
+
+=======
   --button-width-web: 178px;
   --button-height-web: 62px;
   --button-radius-web: 10px;
   --button-background-standard: #584239;
   --button-text-color: #ffffff;
   --button-dropshadow: 0px 10px 0px black, 0 0 2px black, 0 0 px black;
+>>>>>>> c7e1be9b2675e2b31f7c84653751d6b8ce3110cc
 
   /*FARVER*/
   /*HVID*/
@@ -78,7 +106,7 @@
   /*SKRIFTTYPER*/
   --font-family-h1: Exo 2, sans-serif;
   --font-family-h2-h4: Palanquin, sans-serif;
-  --font-family-p: Palatino Linotype, serif;
+  --font-family-p: Roboto, serif;
 
   /*SKRIFTSTØRRELSE*/
   --font-size-h1-mobil: 25px;
@@ -105,6 +133,7 @@
   --line-height-reset: 1;
   --line-height-text: 1.5;
 }
+
 /*LISTE*/
 ul {
   list-style-type: square;
@@ -118,6 +147,9 @@ li {
 li span {
   color: #241c19;
   /* Text Color */
+}
+h1{
+    font-family: var(--font-family-h1)
 }
 
 /* KNAP */
@@ -134,7 +166,7 @@ header {
   overflow: hidden;
   background-color: var(--color-brown);
   margin-block: 2px;
-  margin-right: 10px;
+
 }
 
 .navbar a {
@@ -160,6 +192,10 @@ header {
   background-color: inherit;
   font-family: inherit;
   margin: 0;
+  width: 0;
+  height: 0;
+  background-color: none;
+  box-shadow: none;
 }
 
 .navbar a:hover,
@@ -223,6 +259,39 @@ body {
 }
 
 button {
+<<<<<<< HEAD
+ width: var(--button-width-web);
+height: var(--button-height-web);
+background-color: var(--button-background-standard);
+box-shadow: var(--button-dropshadow);  
+border-radius: var(--button-radius-web);
+
+}
+
+button:hover{
+
+  background-color: var(--button-hover);
+  color: var(--color-brown-dark)
+
+}
+
+button:active{
+  background-color: var(--color-blue-dark);
+  box-shadow: var(--button-inner-shadow);
+  box-shadow: var(--button-dropshadow);
+}
+
+.ctaknap {
+
+ width: var(--cta-button-width-web); 
+height:var(--cta-button-height-web) ;
+border-radius: var(--cta-button-radius-web); 
+background-color: var(--cta-button-background-standard);
+
+color: var(--color-primary-white);
+--cta-button-dropshadow: 5px 10px 20px black;
+}
+=======
   width: var(--button-width-web);
   height: var(--button-height-web);
   background-color: var(--button-background-standard);
@@ -237,9 +306,6 @@ header button {
   box-shadow: none;
 }
 
-.toggle-btn {
-  display: none;
-}
 
 header a {
   list-style: none;
@@ -254,8 +320,9 @@ header a {
     display: block;
     min-width: 44px;
     min-height: 44px;
-    font-size: 1.1rem;
+    font-size: 2rem;
     cursor: pointer;
+    margin-block: 9px;
   }
 
   nav {
@@ -292,3 +359,4 @@ header a {
     top: 12%;
   }
 }
+>>>>>>> c7e1be9b2675e2b31f7c84653751d6b8ce3110cc
