@@ -7,17 +7,49 @@
     <link rel="stylesheet" href="style.css" />
     <title>Vite App</title>
   </head>
-  <body class="grid place-items-center p-8">
-    <section id="section1">
-      <h1 class="text-xl font-bold">CPH-LAB'S ANALOG-GUIDE</h1>
-      <p>Her kan du blive klogere på film & se billede-eksempler.</p>
+  <body class=" place-items-center  prose">
+
+
+    <header class="banner flex justify-between">
+      <img src="/img/logo.svg" alt="Logo" />
+      <div>
+        <button class="toggle-btn">☰</button>
+        <nav class="navbar">
+          <div class="dropdown">
+            <button class="dropbtn place-items-right">
+              <p class="">SHOP</p>
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="fremkaldelse.html">BESTIL FREMKALDELSE</a>
+              <a href="#0">KØB FILM & GAVEKORT</a>
+              <a href="#0">VIDEO OVERSPILNING</a>
+              <a href="smalfilm-overspillet.html">SMALFILM OVERSPILNING</a>
+              <a href="#0">SCAN AF LYSBILLEDER</a>
+              <a href="#0">SCAN AF PAPIRBILLEDER</a>
+            </div>
+          </div>
+          <a href="">ANALOG-GUIDE</a>
+          <a href="">SÅDAN GØR DU</a>
+          <a href="">OM OS</a>
+          <a href="">FAQ</a>
+          <a href=""><img src="/img/Bag.svg" alt="Kurv" /></a>
+        </nav>
+      </div>
+    </header>
+    <br>
+
+    <section id="section1" class="text-center ">
+      <h1 class=" font-bold">CPH-LAB'S ANALOG-GUIDE</h1>
+      <h3>Her kan du blive klogere på film & se billede-eksempler.</h3>
     </section>
 
     <section>
-      <h2 class="text-center font-bold">UDVALGTE FILM</h2>
-      <div class="gap-4 md:grid md:grid-cols-2 md:grid-rows-3">
-        <article class="flex max-w-md flex-row gap-4">
-          <div><img src="img/vite.svg" alt="Vite Logo" /></div>
+      <h2 class="text-center ">UDVALGTE FILM</h2>
+      <div class="gap-4  ">
+       
+        <article class="  analogcard  gap-4 md:grid grid-cols-2">
+          <div class="mx-16"><img src="/img/120fremkaldelse.png" alt="Vite Logo" /></div>
           <div>
             <h3 class="text-center font-bold">KODAK PORTRA</h3>
             <h4 class="text-center">160, 400 & 800 Perfekt til portrætter</h4>
@@ -26,10 +58,15 @@
               helt bestemt blandt de mest populære film på markedet. De er kendt
               for deres exceptionelle hudtoner...
             </p>
-            <button>Køb her</button>
+           
           </div>
+          <div class="mx-16">
+          <button >Køb her</button>
+        </div>
         </article>
-        <article class="flex max-w-md flex-row gap-4">
+        <br>
+
+        <article class=" analogcard max-w-md flex-row gap-4 md:grid grid-cols-2">
           <div><img src="img/vite.svg" alt="Vite Logo" /></div>
           <div>
             <h3 class="text-center font-bold">KODAK COLORPLUS</h3>
@@ -39,10 +76,13 @@
               farvefilm. Det er en fantastisk all-round film, der dur til de
               fleste situationer.
             </p>
-            <button></button>
+            <button>KØB HER</button>
           </div>
         </article>
-        <article class="flex max-w-md flex-row gap-4">
+        <br>
+
+
+        <article class=" analogcard max-w-md flex-row gap-4 md:grid grid-cols-2">
           <div><img src="img/vite.svg" alt="Vite Logo" /></div>
           <div>
             <h3 class="text-center font-bold">KODAK T-MAX</h3>
@@ -56,7 +96,10 @@
             <button></button>
           </div>
         </article>
-        <article class="flex max-w-md flex-row gap-4">
+        <br>
+
+
+        <article class="analogcard  max-w-md flex-row gap-4 md:grid grid-cols-2">
           <div><img src="img/vite.svg" alt="Vite Logo" /></div>
           <div>
             <h3 class="text-center font-bold">CINESTILL 800T</h3>
@@ -70,7 +113,10 @@
             <button></button>
           </div>
         </article>
-        <article class="flex max-w-md flex-row gap-4">
+        <br>
+
+
+        <article class=" analogcard max-w-md flex-row gap-4 grid md:grid-cols-2">
           <div><img src="img/vite.svg" alt="Vite Logo" /></div>
           <div>
             <h3 class="text-center font-bold">FUJI C200</h3>
@@ -83,7 +129,10 @@
             <button></button>
           </div>
         </article>
-        <article class="flex max-w-md flex-row gap-4">
+        <br>
+
+
+        <article class=" analogcard max-w-md flex-row gap-4 md:grid grid-cols-2">
           <div><img src="img/vite.svg" alt="Vite Logo" /></div>
           <div>
             <h3 class="text-center font-bold">KODAK EKTAR</h3>
@@ -102,7 +151,7 @@
     <section>
       <h2 class="text-center font-bold">HVAD BETYDER...</h2>
       <div class="gap-y-12 md:grid md:grid-cols-3">
-        <article>
+        <article class="hvadbetyder1">
           <h3 class="text-center font-bold">ISO</h3>
           <p>
             Alle film har en ISO-værdi. Hvad dette ISO-tal fortæller er, hvor
@@ -116,7 +165,8 @@
             <li>ISO 800 og højere: Aften- og natbillede</li>
           </ul>
         </article>
-        <article>
+        <br>
+        <article class="hvadbetyder2">
           <h3 class="text-center font-bold">Gryn/korn</h3>
           <p>
             Et udtryk der tit indgår i beskrivelsen af en film og som også ses i
@@ -128,7 +178,8 @@
             i større grad et æstetikvalg. Jo højere ISO, jo større gryn.
           </p>
         </article>
-        <article>
+        <br>
+        <article class="hvadbetyder3 ">
           <h3 class="text-center font-bold">Farve & sort/hvid</h3>
           <p>
             Før vi alle kunne redigere vores digitale billeder, kunne man stadig

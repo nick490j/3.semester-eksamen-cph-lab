@@ -9,6 +9,35 @@
 </head>
 <body class="prose mx-5">
 
+
+    <header class="banner flex justify-between">
+        <img src="/img/logo.svg" alt="Logo" />
+        <div>
+          <button class="toggle-btn">☰</button>
+          <nav class="navbar">
+            <div class="dropdown">
+              <button class="dropbtn place-items-right">
+                <p class="">SHOP</p>
+                <i class="fa fa-caret-down"></i>
+              </button>
+              <div class="dropdown-content">
+                <a href="fremkaldelse.html">BESTIL FREMKALDELSE</a>
+                <a href="#0">KØB FILM & GAVEKORT</a>
+                <a href="#0">VIDEO OVERSPILNING</a>
+                <a href="smalfilm-overspillet.html">SMALFILM OVERSPILNING</a>
+                <a href="#0">SCAN AF LYSBILLEDER</a>
+                <a href="#0">SCAN AF PAPIRBILLEDER</a>
+              </div>
+            </div>
+            <a href="">ANALOG-GUIDE</a>
+            <a href="">SÅDAN GØR DU</a>
+            <a href="">OM OS</a>
+            <a href="">FAQ</a>
+            <a href=""><img src="/img/Bag.svg" alt="Kurv" /></a>
+          </nav>
+        </div>
+      </header>
+
     <section>
         <h1>Indscanning af smalfilmfilm</h1>
         <h3>VI INDSCANNER & DIGITALISERER DINE SMALFILM I PROFESSIONEL KVALITET</h3>
@@ -42,8 +71,10 @@
 <p>Vælg smalfilm og kvalitet</p>
 </section>
 
-<section class="">
+<section class=" grid grid-cols-2 gap-5">
 <div x-data="{ open: false }" x-cloak>
+
+
   <button @click="open = ! open" :aria-expanded="open" aria-controls="smalfilm og kvalitet prislise">8mm SD</button>
   <ol x-show="open" id="tracklist">
    <div>
@@ -67,9 +98,9 @@
   </ol>
 </div>
 
-<div x-data="{ open: false }" x-cloak>
+<div class="smalfilm_og_kvalitet" x-data="{ open: false }" x-cloak>
     <button @click="open = ! open" :aria-expanded="open" aria-controls="tracklist">8mm HD 720p</button>
-    <ol x-show="open" id="tracklist">
+    <ol class="" x-show="open" id="tracklist">
      <div>
       <h3>Opstart</h3>
       <p>250 Kr.</p>
@@ -85,7 +116,7 @@
      </div>
   
      <div>
-      <h3>splejsning pr. stk.</h3>
+      <h3>Splejsning pr. stk.</h3>
       <p>15 Kr.</p>
      </div>
     </ol>
@@ -114,7 +145,7 @@
      </div>
     </ol>
   </div>
-
+  
   <div x-data="{ open: false }" x-cloak>
     <button @click="open = ! open" :aria-expanded="open" aria-controls="tracklist">9,5mm SD</button>
     <ol x-show="open" id="tracklist">
@@ -138,7 +169,7 @@
      </div>
     </ol>
   </div>
-
+  
   <div x-data="{ open: false }" x-cloak>
     <button @click="open = ! open" :aria-expanded="open" aria-controls="tracklist">9,5mm HD 720P</button>
     <ol x-show="open" id="tracklist">
@@ -162,7 +193,7 @@
      </div>
     </ol>
   </div>
-
+  
   <div x-data="{ open: false }" x-cloak>
     <button @click="open = ! open" :aria-expanded="open" aria-controls="tracklist">9,4mm HD 1080p</button>
     <ol x-show="open" id="tracklist">
@@ -186,7 +217,7 @@
      </div>
     </ol>
   </div>
-
+  
   <div x-data="{ open: false }" x-cloak>
     <button @click="open = ! open" :aria-expanded="open" aria-controls="tracklist">16mm HD 720p</button>
     <ol x-show="open" id="tracklist">
@@ -210,7 +241,7 @@
      </div>
     </ol>
   </div>
-
+  
   <div x-data="{ open: false }" x-cloak>
     <button @click="open = ! open" :aria-expanded="open" aria-controls="tracklist">16mm HD 1080p</button>
     <ol x-show="open" id="tracklist">
@@ -235,7 +266,7 @@
     </ol>
   </div>
 
-
+  
   <div x-data="{ open: false }" x-cloak>
     <button @click="open = ! open" :aria-expanded="open" aria-controls="tracklist">16mm 2K</button>
     <ol x-show="open" id="tracklist">
@@ -259,7 +290,7 @@
      </div>
     </ol>
   </div>
-
+  
   <div x-data="{ open: false }" x-cloak>
     <button @click="open = ! open" :aria-expanded="open" aria-controls="tracklist">16mm 4K</button>
     <ol x-show="open" id="tracklist">
@@ -287,30 +318,34 @@
     </section>
 
 
-
+<br>
+<br>
+<br>
     <section>
-        <h2>UDFYLD FORMULAR & MODTAG BESTILLINGSLINK</h2>
         <form>
-            <label for="fname">Fornavn:</label><br>
-            <input type="text" id="fname" name="fname"><br>
-            <label for="lname">Efternavn:</label><br>
-            <input type="text" id="lname" name="lname"><br>
-            <label for="fname">Email::</label><br>
-            <input type="text" id="fname" name="fname"><br>
-            <label for="lname">Telefonnummer::</label><br>
-            <input type="text" id="lname" name="lname"><br>
+            <h2>UDFYLD FORMULAR & MODTAG BESTILLINGSLINK</h2>
 
+            <label  for="fname">Fornavn:</label><br>
+            <input class="input" type="text"  name="fname"><br>
+            <label for="lname">Efternavn:</label><br>
+            <input class="input" type="text"  name="lname"><br>
+            <label for="fname">Email::</label><br>
+            <input class="input" type="text"  name="fname"><br>
+            <label for="lname">Telefonnummer::</label><br>
+            <input class="input" type="text" name="lname"><br>
+<br>
             <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
              <label for="vehicle1"> USB/HDD KOPI:  + 249 KR.*</label><br>
           <h4>SMALFILM INFO</h4>
-          <p>skriv her antal ruller, type af smalfilm, diameter på dem og hvilken kvalitet de ønskes scannet i:</p>
+          <p>Skriv her antal ruller, type af smalfilm, diameter på dem og hvilken kvalitet de ønskes scannet i:</p>
           <label for="lname">  <label for="lname"></label>
-            <input type="text" id="lname" name="lname"><br></label><br>
+            <input type="text"  name="lname"><br></label><br>
             <button>Indsend</button>
         </form>
     </section>
+    <br>
 
-    <section>
+    <section class="spørgsmål">
         <h3>HAR DU SPØRGSMÅL?</h3>
         <p>Du finder svar på mange spørgsmål under vores FAQ, og ellers skal du altid være velkommen til at kontakte os. Du kan finde vores kontaktinformationer på Om os siden.</p>
     </section>
